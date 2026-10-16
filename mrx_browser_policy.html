@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MRX Browser</title>
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --primary-gradient: linear-gradient(135deg, #2563eb, #1d4ed8);
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-green: #10b981;
+            --border-color: #334155;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-color: #f8fafc;
+                --card-bg: #ffffff;
+                --text-primary: #0f172a;
+                --text-secondary: #475569;
+                --border-color: #e2e8f0;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--primary-gradient);
+            color: #ffffff;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .highlight-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .highlight-card .icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .highlight-card h3 {
+            font-size: 16px;
+            margin-bottom: 4px;
+            color: var(--text-primary);
+        }
+
+        .highlight-card p {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>MRX Browser</h1>
+        <p>Privacy Policy • Last Updated: October 2024</p>
+    </div>
+
+    <div class="grid">
+        <div class="highlight-card">
+            <span class="icon">🔒</span>
+            <h3>100% Local Data</h3>
+            <p>Your history & bookmarks stay on your phone only.</p>
+        </div>
+        <div class="highlight-card">
+            <span class="icon">🛡️</span>
+            <h3>Ad & Tracker Block</h3>
+            <p>Built-in ad blocker prevents intrusive tracking scripts.</p>
+        </div>
+        <div class="highlight-card">
+            <span class="icon">🚫</span>
+            <h3>No Data Selling</h3>
+            <p>We do not collect, sell, or monetize your personal data.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>1. Overview</h2>
+        <p>At <strong>MRX Browser</strong>, we believe privacy is a fundamental human right. MRX Browser is designed to provide a fast, secure, and lightweight web browsing experience without compromising your personal privacy.</p>
+        <p>This Privacy Policy explains how MRX Browser handles your information, what data remains strictly local on your device, and how your privacy is protected when you browse the web.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Information Collection and Storage</h2>
+        <span class="badge">On-Device Storage Only</span>
+        <p>MRX Browser operates on a privacy-first model. We do not maintain external servers to collect or store your personal browsing activity.</p>
+        <ul>
+            <li><strong>Browsing History & Bookmarks:</strong> Your web search history, saved bookmarks, and active browser tabs are saved locally on your device using encrypted SQLite databases.</li>
+            <li><strong>Downloaded Files:</strong> Files you download using MRX Browser are saved directly to your device's local storage (Downloads folder) via Android DownloadManager.</li>
+            <li><strong>Settings Preferences:</strong> Your app settings (such as chosen Search Engine, Ad Blocker toggles, App Lock state) are stored securely using Android DataStore on your device.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Permissions Used by MRX Browser</h2>
+        <p>MRX Browser requests only necessary Android permissions required to deliver browser features:</p>
+        <ul>
+            <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required to load web pages, perform web searches, and check network connectivity.</li>
+            <li><strong>WRITE_EXTERNAL_STORAGE / Downloads:</strong> Required to save downloaded files, images, videos, and documents to your device.</li>
+            <li><strong>USE_BIOMETRIC:</strong> Optional permission used solely for Biometric/Fingerprint App Lock feature when enabled in Settings. Your biometric data is processed entirely by Android system hardware and is never accessed by MRX Browser.</li>
+            <li><strong>CAMERA & RECORD_AUDIO:</strong> Optional runtime permissions used only if you explicitly grant permission to a website (e.g. video call or audio recording inside web pages).</li>
+            <li><strong>POST_NOTIFICATIONS:</strong> Required on Android 13+ to show progress notifications for active file downloads.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Ad Blocking & Safe Browsing</h2>
+        <p>MRX Browser includes built-in ad blocking and safe browsing capabilities to protect you from malvertising and malicious scripts:</p>
+        <ul>
+            <li><strong>Ad Blocker:</strong> Uses locally bundled domain rules to intercept known tracker and advertisement network requests. No browsing URLs are sent to external servers for ad filtering.</li>
+            <li><strong>Safe Browsing:</strong> Leverages Android System Safe Browsing APIs to warn you if a site is known for phishing or malware.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Third-Party Services & Websites</h2>
+        <p>When you use MRX Browser to visit third-party websites or search engines (such as Google, Bing, DuckDuckGo, Ecosia), those external sites operate under their own respective privacy policies:</p>
+        <ul>
+            <li><strong>Search Engines:</strong> When you search from the URL bar, your query is sent directly to your selected search engine provider.</li>
+            <li><strong>Websites Visited:</strong> Websites you visit may collect cookies or analytics according to their own privacy policies. You can clear cookies, cache, and browsing data at any time from Settings.</li>
+            <li><strong>AdMob / Advertising:</strong> The app may display non-intrusive native advertisements or sponsored suggestions on the home screen powered by Google AdMob, which may collect standard device identifiers according to Google Privacy Policy.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Your Data Control & Deletion</h2>
+        <p>You have full control over all browsing data stored by MRX Browser:</p>
+        <ul>
+            <li>You can clear your browsing history, bookmarks, and local cache at any time by going to <strong>Settings &gt; Clear Browsing Data</strong>.</li>
+            <li>You can use <strong>Incognito Mode</strong> for private browsing sessions where no history or cookies are saved.</li>
+            <li>Uninstalling the application immediately and permanently removes all stored app data from your device.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Children's Privacy</h2>
+        <p>MRX Browser does not knowingly collect or solicit personal information from children under the age of 13. Our browser does not collect personal identity information from any user.</p>
+    </div>
+
+    <div class="section">
+        <h2>8. Updates to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in app features or legal requirements. Updated policies will be accessible directly inside the app and on our official app listing.</p>
+    </div>
+
+    <div class="section">
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy or MRX Browser, please feel free to reach out to us:</p>
+        <p><strong>Email:</strong> support@mrxbrowser.com</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 MRX Browser. All rights reserved.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
